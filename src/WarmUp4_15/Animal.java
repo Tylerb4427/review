@@ -10,9 +10,17 @@ package WarmUp4_15;
  * @author bovenzit2681
  */
 public class Animal {
-
+    private static String name;
     private static String type;
     private static int legs;
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String aName) {
+        name = aName;
+    }
 
     public Animal(String type, int legs) {
         this.type = type;
@@ -27,4 +35,10 @@ public class Animal {
     public static String getType(){
         return type;
     }
+    
+    @Override
+    public String toString(){
+        return name+" the " +type;
+    } 
+    
 }

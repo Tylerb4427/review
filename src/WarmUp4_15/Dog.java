@@ -9,15 +9,14 @@ package WarmUp4_15;
  *
  * @author bovenzit2681
  */
-public  class Dog extends Animal {
+public class Dog extends Animal {
 
     private static int size;
-    private static String name;
 
-    public Dog(int size, String name) {
+    public Dog(int asize, String name) {
         super("dog", 4);
-        this.size = size;
-        this.name = name;
+        size = asize;
+        super.setName(name);
     }
 
     public static void speak() {
@@ -38,10 +37,6 @@ public  class Dog extends Animal {
                 System.out.println("boof");
                 break;
         }
-    }
-    
-    public static String getName(){
-        return name;
     }
     
 }

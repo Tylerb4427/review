@@ -12,36 +12,16 @@ package WarmUp4_15;
 public  class Cat extends Animal {
 
     private static int size;
-    private static String name;
 
     public Cat(int size, String name) {
         super("cat", 4);
         this.size = size;
-        this.name = name;
+        super.setName(name);
     }
 
     public static void speak() {
-        switch (size) {
-            case 1:
-                System.out.println("bark");
-                break;
-
-            case 2:
-                System.out.println("bork");
-                break;
-
-            case 3:
-                System.out.println("woof");
-                break;
-
-            default:
-                System.out.println("boof");
-                break;
-        }
+                System.out.println("meow");
     }
-    
-    public static String getName(){
-        return name;
-    }
+
     
 }
