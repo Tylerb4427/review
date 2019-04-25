@@ -12,13 +12,11 @@ package WarmUp4_15;
 public class DogRunner {
 
     public static void main(String[] args) {
-        Dog doggy;
-        doggy = new Dog(5, "Spots");
-        Dog doge;
-        doge = new Dog(1, "Dogasuaras");
-        Animal dog = new Animal("dog",4);
+        Dog doggy = new Dog(5, "Spots");
+        Dog doge = new Dog(1, "Dogasuaras");
+        //Animal dog = new Animal("dog",4);
 
-        System.out.println("The animal is a " + doggy.getType() + " with " + doggy.getLegs() + " legs. Its name is " + dog.getName());
+        System.out.println("The animal is a " + doggy.getType() + " with " + doggy.getLegs() + " legs. Its name is " + doggy.getName());
         //doggy.speak();
         //doggy.eat();
     }

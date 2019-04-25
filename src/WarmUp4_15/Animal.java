@@ -9,30 +9,30 @@ package WarmUp4_15;
  *
  * @author bovenzit2681
  */
-public class Animal {
-    private static String name;
-    private static String type;
-    private static int legs;
+public class Animal{
+    public String name;
+    private String type;
+    private int legs;
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static void setName(String aName) {
-        name = aName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Animal(String type, int legs) {
         this.type = type;
         this.legs = legs;
     }
-    public static void eat(){
+    public void eat(){
         System.out.println("Nom Nom Nom");
     }
-    public static int getLegs(){
+    public int getLegs(){
         return legs;
     }
-    public static String getType(){
+    public String getType(){
         return type;
     }
     
